@@ -499,7 +499,7 @@ export default function UserProfile() {
                 </div>
                 <div className="hidden sm:flex sm:flex-col sm:items-end">
                   <p className="text-sm leading-6 text-gray-900">
-                    Phone: {address.phone}
+                    {address.phone}
                   </p>
                   <p className="text-sm leading-6 text-gray-500">
                     {address.city}
