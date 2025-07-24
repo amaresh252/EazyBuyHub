@@ -42,8 +42,8 @@ function NavBar({ children }) {
                     <div className="flex-shrink-0">
                       <img
                         className="h-8 w-8"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                        alt="Your Company"
+                        src="https://res.cloudinary.com/dcjptbqbn/image/upload/v1753396115/Screenshot_2025-07-25_035700_tguni4.png"
+                        alt="EazyBuyHub"
                       />
                     </div>
                     <div className="hidden md:block">
