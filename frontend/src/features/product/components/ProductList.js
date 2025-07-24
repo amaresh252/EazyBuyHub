@@ -63,7 +63,6 @@ export default function ProductList() {
 
    const handleChange=(e,section,option)=>{
     const newFilter = {...filter};
-    // TODO : on server it will support multiple categories
     if(e.target.checked){
       if(newFilter[section.id]){
         newFilter[section.id].push(option.value)
@@ -188,12 +187,12 @@ dispatch(fetchBrandsAsync())
             <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
              <DesktopFilter handleChange={handleChange} filters={filters}></DesktopFilter>
 
-              {/* Product grid */}
+         
               <div className="lg:col-span-3">
-                {/* This is our products list  */}
+             
                 <ProductGrid products={products} filters={filters}></ProductGrid>
               </div>
-              {/* Product grid end */}
+              
             </div>
           </section>
 
@@ -218,7 +217,7 @@ dispatch(fetchBrandsAsync())
 function MobileFilter({mobileFiltersOpen,setMobileFiltersOpen,handleChange,filters}){
   return (
     <>
-   {/* Mobile filter dialog */}
+   
    <Transition.Root show={mobileFiltersOpen} as={Fragment}>
   <Dialog
     as="div"
@@ -519,6 +518,6 @@ function ProductGrid({products,filters}){
                       ))}
                     </div>
                   </div>
-                </div>
+  </div>
   </>);
 }
