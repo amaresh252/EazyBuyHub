@@ -19,8 +19,8 @@ export default function Login() {
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <img
             className="mx-auto h-10 w-auto"
-            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-            alt="Your Company"
+            src="https://res.cloudinary.com/dcjptbqbn/image/upload/v1753396115/Screenshot_2025-07-25_035700_tguni4.png"
+            alt="EazyBuyHub"
           />
           <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
             Log in to your account
@@ -49,6 +49,7 @@ export default function Login() {
               <div className="mt-2">
                 <input
                   id="email"
+                  placeholder="eazybuyhub@gmail.com"
                   {...register('email', {
                     required: 'email is required',
                     pattern: {
@@ -79,6 +80,7 @@ export default function Login() {
               <div className="mt-2">
                 <input
                   id="password"
+                  placeholder="Eazybuyhub@123"
                   {...register('password', {
                     required: 'password is required',
                   })}
